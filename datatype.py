@@ -96,6 +96,32 @@ print(myword)
 
 #Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
 l1=["banana","papaya","apple","mango","straberry","guava"]
+l2=[0,4,5]
 
+for i in sorted(l2,reverse=True):
+
+    del l1[i]
+print(l1)
+
+#Write a Python program to print the numbers of a specified list after removing even numbers from it
+
+
+li=[7,6,5,8,9,4,5,2]
+for i in li:
+    if i%2==0:
+        li.remove(i)
+print(li)
+
+#Write a Python program to generate and print a list except for the first 5 elements,
+# where the values are square of numbers between 1 and 30 (both included)
+
+list1=[]
+for i in range(1,30):
+    i=i**3
+    list1.append(i)
+print(list1[5:])     #exlusing first 5 elements
+print(list1[:5])    #only printing first 5 elements
+print(list1[-5:])   #last 5 elements
+print(list1[:-5])   #exclusing last 5 elements.
 
 
